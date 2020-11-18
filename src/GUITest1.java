@@ -1,3 +1,6 @@
+import java.awt.Button;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class GUITest1 {
@@ -11,6 +14,12 @@ public class GUITest1 {
 		JFrame frame = new JFrame("Dark Wave");
 		frame.setSize(W, H);
 		frame.setLocationRelativeTo(null);
+		
+		JButton b1 = new JButton("Men Who Stare");
+		JButton b2 = new JButton("at goats");
+		JButton b3 = new JButton("at code monkey");
+		JButton b14 = new JButton("at the wall");
+		
 		
 	}
 
