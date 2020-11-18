@@ -1,5 +1,7 @@
 import java.awt.Button;
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -24,11 +26,24 @@ public class GUITest1 {
 		JButton b2 = new JButton("at goats");
 		JButton b3 = new JButton("at code monkey");
 		JButton b14 = new JButton("at the wall");
+		JButton dontPush = new JButton("my finger is on the button");
 		
+		b1.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Stop Starring!!!");
+				// TODO Auto-generated method stub
+				
+			}
+			
+		});
 		frame.add(b1);
 		frame.add(b2);
 		frame.add(b14);
 		frame.add(b3);
+		frame.add(dontPush);
+		frame.pack();
 		frame.setVisible(true);
 		
 		
